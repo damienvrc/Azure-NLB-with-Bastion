@@ -90,7 +90,7 @@ Azure Network Load Balancer scenario with 3 web front IIS servers and one Azure 
 
 
 ## IIS loadbalancer site access
-- az network public-ip show --resource-group WORKSHOP --name havas-external-lb-ip --query ipAddress --output tsv  
+- az network public-ip show --resource-group WORKSHOP --name external-lb-ip --query ipAddress --output tsv  
 
 Copie IP in web browser 
 
