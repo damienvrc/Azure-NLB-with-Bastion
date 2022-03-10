@@ -31,9 +31,9 @@ Azure Network Load Balancer scenario with 3 web front IIS servers and one Azure 
 - az network nsg rule create --resource-group WORKSHOP --nsg-name web-nsg --name webhttprule --protocol '*' --direction inbound --source-address-prefix '*' --source-port-range '*' --destination-address-prefix '*' --destination-port-range 80 --access allow --priority 200
 
 ### VM NIC
-- az network nic create --resource-group HAVAS-WORKSHOP --name nicVM01 --vnet-name vnet_01 --subnet sub_01 --network-security-group web-nsg  
-- az network nic create --resource-group HAVAS-WORKSHOP --name nicVM02 --vnet-name vnet_01 --subnet sub_01 --network-security-group web-nsg  
-- az network nic create --resource-group HAVAS-WORKSHOP --name nicVM03 --vnet-name vnet_01 --subnet sub_01 --network-security-group web-nsg  
+- az network nic create --resource-group WORKSHOP --name nicVM01 --vnet-name vnet_01 --subnet sub_01 --network-security-group web-nsg  
+- az network nic create --resource-group WORKSHOP --name nicVM02 --vnet-name vnet_01 --subnet sub_01 --network-security-group web-nsg  
+- az network nic create --resource-group WORKSHOP --name nicVM03 --vnet-name vnet_01 --subnet sub_01 --network-security-group web-nsg  
 
 ### Windows VM
 - az vm create --resource-group WORKSHOP --name VM01 --nics nicVM01 --image win2019datacenter --admin-username workshop --zone 1 --no-wait  
