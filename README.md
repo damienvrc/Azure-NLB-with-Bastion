@@ -78,6 +78,16 @@ Azure Network Load Balancer scenario with 3 web front IIS servers and one Azure 
 
 ## IIS Install via Bastion
 
+- Connect on each VM with Bastion
+![image](https://user-images.githubusercontent.com/100841953/157635424-15eb3052-5f02-47a0-8845-b167289e6844.png)  
+
+![image](https://user-images.githubusercontent.com/100841953/157635738-357b87eb-3baa-4ff5-b926-300c1941b2c6.png)  
+
+![image](https://user-images.githubusercontent.com/100841953/157636584-b31097ad-bd7e-4a15-8076-c6aa3de2fe68.png)  
+
+
+
+
 - Add-WindowsFeature Web-Server  
 - Add-Content -Path C:\inetpub\wwwroot\Default.htm -Value $($env:computername)
 
